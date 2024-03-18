@@ -2,31 +2,173 @@
 
 /*general*/
 
-*{
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
 
-.app{
+.app {
   font-family: 'Inria Sans';
-  background-color: gray;
+  background-color: #29272A;
 }
 
 /*nav*/
 
-nav{
+nav {
   text-align: left;
-  position: absolute;
-  li{
-    font-size: 20 px;
+  position: fixed;
+  padding: 20px 25px;
+
+  li {
+    cursor: pointer;
+    font-size: 20px;
     color: white;
     display: inline-block;
     margin-right: 20px;
+    transition: .3s;
   }
-  img{
+
+  li:hover {
+    text-shadow: 2px 0px 17px rgba(206, 206, 206, 0.87);
+  }
+
+  img {
     height: 50px;
     width: auto;
     margin-bottom: -20px;
   }
 }
 
+/*landing-page*/
+
+#landing-page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+
+  h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    padding-bottom: 5vh;
+    font-weight: 400;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 35px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+  }
+
+  .btn {
+    text-align: center;
+  }
+}
+
+/*hero*/
+
+#hero {
+  display: flex;
+  color: white;
+  padding: 15vh 7vh 0vh 7vh;
+  gap: 5vh;
+
+  video {
+    border-radius: 20px;
+    width: 80vh;
+    height: auto;
+  }
+
+  .heroDescription {
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    h2 {
+      font-weight: 200;
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 5vh;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 0 50px;
+      opacity: 0.7;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+  }
+
+}
+
+/*about*/
+
+#about {
+  padding: 15vh 7vh 0vh 7vh;
+  display: flex;
+  color: white;
+  align-items: flex-start;
+  gap: 5vh;
+
+  div {
+    flex: 1 1 0;
+    width: 0;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  p {
+    padding-top: 5vh;
+    opacity: 0.7;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: right;
+  }
+
+  .team-card {
+    text-align: center;
+    padding-top: 5vh;
+    display: flex;
+    gap: 5vh;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .team-description {
+      background-color: #421D8D;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+      margin-top: -5px;
+    }
+
+  }
+}
