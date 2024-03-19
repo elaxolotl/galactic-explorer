@@ -21,6 +21,7 @@ html {
 /*nav*/
 
 nav {
+  z-index: 999;
   text-align: left;
   position: fixed;
   padding: 20px 25px;

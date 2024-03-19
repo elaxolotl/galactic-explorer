@@ -1,0 +1,190 @@
+@media screen and (max-width: 1400px) {
+
+    /*nav*/
+
+    nav {
+        z-index: 999;
+        position: fixed;
+        padding: 45px 25px;
+    }
+
+    /*landing-page*/
+
+    #landing-page {
+
+        h1 {
+            font-size: 35px;
+        }
+
+        button {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 10px 20px;
+        }
+    }
+
+    /*hero*/
+
+    #hero {
+        video {
+            width: 50vh !important;
+        }
+
+        .heroDescription {
+            padding-top: 20px !important;
+
+            h2 {
+                font-size: 20px !important;
+                margin-bottom: 2vh !important;
+            }
+
+            p {
+                font-size: 12px !important;
+            }
+        }
+
+    }
+
+    /*about*/
+
+    #about {
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .about-us {
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .about-team {
+
+            #team {
+
+                h4,
+                h3 {
+                    font-weight: 200;
+                }
+
+                #text {
+                    font-size: 12px;
+                }
+
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+
+            }
+        }
+
+
+
+    }
+
+    /*services*/
+
+    #services {
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .services-description {
+            font-size: 12px;
+            margin-bottom: 10vh;
+            line-height: 1.7;
+        }
+
+        .services-list {
+            gap: 5vh;
+
+            li {
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: -15px;
+                }
+
+                h3 {
+                    font-size: 12px;
+                    padding: 10px;
+                }
+            }
+
+        }
+
+
+    }
+
+    /*destinations*/
+    #destinations {
+        padding: 15vh 7vh 0vh 7vh !important;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 5vh;
+        }
+
+        .destinations-list {
+            margin-top: 5vh !important;
+
+            button {
+                font-size: 20px;
+            }
+
+            li {
+                width: 35vh;
+                height: 35vh;
+
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #services-destinations {
+        margin: 10vh 10vh 0vh 10vh;
+
+    }
+
+    /*contact*/
+
+    #contact {
+
+        h1 {
+            padding-top: 200px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+
+        li {
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+    }
+
+    /*footer*/
+
+    footer {
+        font-size: 12px;
+
+    }
+}

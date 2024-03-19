@@ -3,13 +3,13 @@ import logo from './assets/StarLogo.svg'
 import logoPurple from './assets/StarLogo-purple.svg'
 import heroVideo from './assets/spacewalk-video.mp4'
 import './App.css'
+import './mediaQueries.css'
 import team1 from "./assets/team1.png"
 import team2 from "./assets/team2.png"
 import team3 from "./assets/team3.png"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import React, { useState } from 'react';
 import { FaXTwitter, FaSquareFacebook, FaSquareInstagram, FaLinkedin    } from "react-icons/fa6";
-import { AiOutlineYoutube } from "react-icons/ai";
 
 
 
@@ -22,12 +22,15 @@ const navItems = [
   },
   {
     name: "Services",
+    url: "#services"
   },
   {
     name: "Destinations",
+    url: "#destinations"
   },
   {
     name: "Contact Us",
+    url: "#contact"
   }
 ]
 
