@@ -249,6 +249,15 @@ function Contact() {
       </ul>
     </div>
   )
+} 
+
+function Footer(){
+  return(
+    <footer>
+      <hr></hr>
+      <p>Copyright &#169; 2024 Galactic Explorer. All Rights Reserved. Reproduction in whole or in part without permission is prohibited.</p>
+    </footer>
+  )
 }
 
 function App() {
@@ -261,6 +270,7 @@ function App() {
       <About />
       <ServicesDestinations />
       <Contact />
+      <Footer />    
     </div>
   )
 }
