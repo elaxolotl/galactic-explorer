@@ -66,7 +66,7 @@ nav {
     background-color: white;
     border: none;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     padding: 20px 35px;
     cursor: pointer;
@@ -87,18 +87,26 @@ nav {
 /*hero*/
 
 #hero {
-  display: flex;
   color: white;
   padding: 15vh 7vh 0vh 7vh;
-  gap: 5vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5vh;
+  grid-row-gap: 0px;
 
-  video {
-    border-radius: 20px;
-    width: 80vh;
-    height: auto;
+  .video {
+    grid-area: 1 / 1 / 2 / 2;
+
+    video {
+      border-radius: 20px;
+      width: 80vh;
+      height: auto;
+    }
   }
 
   .heroDescription {
+    grid-area: 1 / 2 / 2 / 3;
     padding-top: 50px;
     background-repeat: no-repeat;
     background-position: center;
@@ -126,49 +134,226 @@ nav {
 
 #about {
   padding: 15vh 7vh 0vh 7vh;
-  display: flex;
   color: white;
-  align-items: flex-start;
-  gap: 5vh;
-
-  div {
-    flex: 1 1 0;
-    width: 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10vh;
+  grid-row-gap: 0px;
 
   h2 {
     font-weight: 400;
     font-size: 35px;
-    text-align: center;
   }
 
-  p {
-    padding-top: 5vh;
-    opacity: 0.7;
+  .about-us {
+    grid-area: 1 / 1 / 2 / 2;
+
+    h2 {
+      text-align: right;
+    }
+
+    p {
+      padding-top: 10vh;
+      opacity: 0.7;
+      font-size: 20px;
+      line-height: 1.7;
+      text-align: right;
+    }
+  }
+
+  .about-team {
+    grid-area: 1 / 2 / 2 / 3;
+
+    h2 {
+      text-align: left;
+    }
+
+    #team {
+      text-align: center;
+      padding-top: 5vh;
+      display: flex;
+      gap: 5vh;
+      flex-wrap: wrap;
+
+      h4,
+      h3 {
+        font-weight: 200;
+      }
+
+      #text {
+        background-color: #421D8D;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: -15px;
+        z-index: 999;
+        position: sticky
+      }
+
+      img {
+        width: 150px;
+        height: auto;
+        position: sticky;
+        z-index: 1;
+      }
+
+    }
+  }
+
+
+
+}
+
+/*services*/
+
+#services {
+  padding: 15vh 7vh 0vh 7vh;
+  grid-area: 1 / 1 / 2 / 2;
+  color: white;
+  text-align: center;
+
+  h2 {
+    font-weight: 400;
+    font-size: 35px;
+    text-align: right;
+  }
+
+  .services-description {
     font-size: 20px;
+    margin-bottom: 10vh;
+    opacity: 0.7;
+    font-weight: 400;
     line-height: 1.7;
     text-align: right;
   }
 
-  .team-card {
-    text-align: center;
-    padding-top: 5vh;
+  .services-list {
     display: flex;
-    gap: 5vh;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
 
-    .team-description {
-      background-color: #421D8D;
-      width: 100%;
-      height: 100%;
-    }
+    li {
+      list-style: none;
 
-    img {
-      width: 150px;
-      height: auto;
-      margin-top: -5px;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: -15px;
+        position: relative;
+        z-index: 1;
+      }
+
+      h3{
+        background-color: #421D8D;
+        padding: 10px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 999;
+      }
     }
 
   }
+
+
+}
+
+/*destinations*/
+#destinations{
+  padding: 15vh 7vh 0vh 7vh;
+  color: white;
+  text-align: left;
+  grid-area: 1 / 2 / 2 / 3; 
+
+  h2 {
+    font-weight: 400;
+    font-size: 35px;
+  }
+
+  p{
+    font-size: 20px;
+    margin-bottom: 10vh;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  .destinations-list{
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    button{
+      height: 50px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 70px;
+      cursor: pointer;
+    }
+    li{
+      text-align: center;
+      list-style: none;
+      width: 35vh;
+      height: 35vh;
+      img{
+        height: 30vh;
+        width: auto;
+      }
+      h3{
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+#services-destinations{
+  background-color: rgb(41, 39, 42, 0.5);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5vh; 
+  grid-row-gap: 0px;
+  gap: 5vh;
+  margin: 10vh 30vh 0vh 30vh;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain  ;
+  background-blend-mode:hue;
+}
+
+/*contact*/
+
+#contact{
+  color: white;
+  text-align: center;
+  background-image: url(/public/contact-us-background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  h1{
+    padding-top: 500px;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  p{
+    font-size: 20px;
+    opacity: 0.7;
+    font-weight: 400;
+    }
+  a{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
 }
