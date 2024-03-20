@@ -1,4 +1,4 @@
-import background from './assets/landing-page-background.svg'
+import background from './assets/landing-page-background.png'
 import logo from './assets/StarLogo.svg'
 import logoPurple from './assets/StarLogo-purple.svg'
 import heroVideo from './assets/spacewalk-video.mp4'
