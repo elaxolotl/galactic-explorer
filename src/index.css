@@ -5,7 +5,9 @@
 body,
 html {
   height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -176,6 +178,7 @@ nav {
       display: flex;
       gap: 5vh;
       flex-wrap: wrap;
+      justify-content: center;
 
       h4,
       h3 {

@@ -188,3 +188,223 @@
 
     }
 }
+
+@media screen and (max-width: 400px) {
+
+    /*nav*/
+
+    nav {
+
+        li {
+            font-size: 10px !important;
+        }
+
+        img {
+            height: 30px !important;
+            margin-bottom: -10px !important;
+        }
+    }
+
+    /*landing-page*/
+
+    #landing-page {
+
+        h1 {
+            font-size: 20px !important;
+        }
+
+        button {
+            font-size: 10px !important;
+            padding: 7px 10px !important;
+        }
+    }
+
+    /*hero*/
+
+    #hero {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        video {
+            width: 40vh !important;
+        }
+
+        .heroDescription {
+            padding-top: 20px !important;
+
+            h2 {
+                font-size: 20px !important;
+                margin-bottom: 2vh !important;
+            }
+
+            p {
+                font-size: 12px !important;
+                margin: 0 10px  !important;
+                text-align: center;
+            }
+        }
+
+    }
+
+    /*about*/
+
+    #about {
+        display: flex !important;
+        flex-wrap: wrap;
+
+        h2 {
+            font-size: 20px !important;
+            text-align: center !important;
+        }
+
+        .about-us {
+
+            p {
+                padding-top: 2vh !important;
+                font-size: 12px !important;
+                text-align: center !important;
+            }
+        }
+
+        .about-team {
+
+            margin-top: 5vh !important;
+
+            #team {
+
+                h2 {
+                    font-size: 20px !important;
+                }
+
+                h4,
+                h3 {
+                    font-weight: 200;
+                    text-align: center !important;
+                }
+
+                #text {
+                    font-size: 10px;
+                }
+
+                img {
+                    width: 70px !important;
+                }
+
+            }
+        }
+
+
+
+    }
+
+    /*services*/
+
+    #services {
+
+        h2 {
+            font-size: 20px !important;
+            text-align: center !important;
+        }
+
+        .services-description {
+            font-size: 10px !important ;
+            text-align: center !important;
+            margin-bottom: 2vh !important;
+        }
+
+        .services-list {
+            gap: 5vh;
+
+            li {
+
+                img {
+                    width: 70px !important;
+                    height: 70px !important;
+                }
+
+                h3 {
+                    font-size: 10px;
+                }
+            }
+
+        }
+
+
+    }
+
+    /*destinations*/
+    #destinations {
+        padding: 15vh 7vh 0vh 7vh !important;
+        text-align: center !important;
+
+        h2 {
+            font-size: 20px !important;
+        }
+
+        p {
+            font-size: 10px !important;
+            margin-bottom: 5vh;
+        }
+
+        .destinations-list {
+            margin-top: 5vh !important;
+
+            button {
+                font-size: 20px;
+            }
+
+            li {
+                width: 20vh !important;
+                height: 20vh !important;
+
+                img{
+                    height: 20vh !important;
+                  }
+
+                h3 {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    #services-destinations {
+        margin: 0vh !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+    }
+
+    /*contact*/
+
+    #contact {
+
+        h1 {
+            padding-top: 100px !important;
+            font-size: 20px !important;
+        }
+
+        p {
+            font-size: 10px !important;
+        }
+
+        a {
+            padding-top: 10px !important;
+            font-size: 10px !important;
+        }
+
+        li {
+            margin-top: 100px !important;
+            margin-left: 10px !important;
+            font-size: 15px !important;
+        }
+
+    }
+
+    /*footer*/
+
+    footer {
+        font-size: 10px !important;
+
+    }
+}

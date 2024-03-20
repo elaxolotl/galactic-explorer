@@ -38,7 +38,7 @@ function Nav() {
   return (
     <nav>
       <ul>
-        <li><img src={logo}></img></li>
+        <li><a href='#landing-page'><img src={logo}></img></a></li>
         {navItems.map(function (item) {
           return (
             <a href={item.url}><li>{item.name}</li></a>
